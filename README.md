@@ -4,6 +4,17 @@
 
 Explore a fixed bird- and swine-flu dataset, select locations, and inspect distance-based scores. The project began as a HackAppleton team prototype; this repository includes a C++ backend, a CMake build, and backend tests.
 
+## Team and my contribution
+
+Global Flu Tracker began as a three-person project by **Ryan Lai, Akshath, and Michael** at **HackAppleton 2025**, where our team placed **second overall**.
+
+My work on the hackathon project included:
+
+- Building the interactive outbreak map with Leaflet.js and OpenStreetMap tiles, including toggleable human and animal case layers.
+- Implementing location-based proximity scoring with the Haversine formula and Nominatim geocoding.
+
+This is my portfolio fork of [Akshath's repository](https://github.com/AkshathCodes/Bird-Flu-Tracker). The original browser project used JavaScript, HTML/CSS, and Leaflet. This repository includes a later C++17 backend; its existing authorship, commit history, and MIT license are preserved. The contribution notes above describe my work on the hackathon project.
+
 ## What the implementation demonstrates
 
 - **C++ core logic:** great-circle distance using the Haversine formula, nearest-location searches, and threshold-based scoring.
@@ -22,7 +33,7 @@ Scores use distance to the nearest stored location. The frontend's "AI Pandemic 
 Requires **CMake 3.16+**, a **C++17 compiler**, and **Git**. Initial configuration needs internet access because CMake fetches [cpp-httplib](https://github.com/yhirose/cpp-httplib) and [nlohmann/json](https://github.com/nlohmann/json).
 
 ```sh
-git clone https://github.com/AkshathCodes/Bird-Flu-Tracker.git
+git clone https://github.com/ryanboanlai/Bird-Flu-Tracker.git
 cd Bird-Flu-Tracker
 cmake -S . -B build
 cmake --build build --config Release
